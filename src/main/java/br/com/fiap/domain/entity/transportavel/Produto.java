@@ -4,7 +4,9 @@ import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
-
+@Entity
+@Table(name = "TB_PRODUTO")
+@DiscriminatorValue("PRODUTO")
 public class Produto extends Transportavel {
 
     private String etiqueta;
